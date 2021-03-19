@@ -1,7 +1,26 @@
-﻿
+﻿@model IEnumerable<book.web.ViewModels.GetMostRecentViewModel>
 @{
     ViewData["Title"] = "Index";
 }
 
 <h1>Index</h1>
+
+@*<div class="container">
+    <table class="table table-bordered">
+        <tr>
+            <th>Name</th>
+            <th>Title</th>
+            <th>Year</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Title</td>
+                <td>@item.Year</td>
+            </tr>
+
+        }
+    </table>
+</div>*@
 
