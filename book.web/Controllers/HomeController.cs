@@ -73,7 +73,7 @@ namespace book.web.Controllers
 			   })
 			   .OrderBy(c => c.Name);
 
-			var listMostRecent = new List<GetMostRecentViewModel>();
+			var result = new List<GetMostRecentViewModel>();
 
 			foreach (var item in categories)
 			{
@@ -86,12 +86,12 @@ namespace book.web.Controllers
 					model.Title = book.Title;
 					model.Year = book.Year;
 
-					listMostRecent.Add(model);
+					result.Add(model);
 				}
 
 			}
 
-			return listMostRecent;
+			return result;
 		}
 	}
 }
